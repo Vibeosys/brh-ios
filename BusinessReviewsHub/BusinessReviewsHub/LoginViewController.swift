@@ -69,19 +69,19 @@ class LoginViewController: UIViewController {
       var frame = CGRect.init(x: 0, y: 0, width: 30, height: 30)
       var imageSize = CGSize.init(width: 20, height: 20)
        
-        let personimage = UIImage(named: "ic_person_grey_24.png")
+        let personimage = UIImage(named:"person")
         userTextField.addLeftIcon(personimage, frame:frame, imageSize:imageSize)
          userTextField.underlined()
         
         
-        let passwordimage = UIImage(named: "ic_lock_grey_24.png")
+        let passwordimage = UIImage(named: "password")
         passwordTextField.addLeftIcon(passwordimage, frame: frame, imageSize: imageSize)
         passwordTextField.underlined()
 
         
         
         
-        let companyimage = UIImage(named: "ic_company_grey_24.png")
+        let companyimage = UIImage(named: "company")
         companytextField.addLeftIcon(companyimage, frame: frame, imageSize: imageSize)
         companytextField.underlined()
 

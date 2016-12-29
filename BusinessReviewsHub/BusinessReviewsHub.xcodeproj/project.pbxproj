@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD42150A1E13BE1B00658EA9 /* ic_person_grey_24.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4215091E13BE1B00658EA9 /* ic_person_grey_24.png */; };
-		CD42150C1E13C1F100658EA9 /* ic_lock_grey_24.png in Resources */ = {isa = PBXBuildFile; fileRef = CD42150B1E13C1F100658EA9 /* ic_lock_grey_24.png */; };
 		CD42150E1E13C22400658EA9 /* ic_company_grey_24.png in Resources */ = {isa = PBXBuildFile; fileRef = CD42150D1E13C22400658EA9 /* ic_company_grey_24.png */; };
 		CD52599D1E126A230042F7F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52599C1E126A230042F7F1 /* AppDelegate.swift */; };
 		CD52599F1E126A230042F7F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52599E1E126A230042F7F1 /* LoginViewController.swift */; };
@@ -21,6 +19,12 @@
 		CD5259CE1E1279850042F7F1 /* splash_screen_logo_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5259CD1E1279850042F7F1 /* splash_screen_logo_2.png */; };
 		CD5259D21E128EC90042F7F1 /* loginImage.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5259D11E128EC90042F7F1 /* loginImage.png */; };
 		CD5904BC1E14F8CB001FAEE1 /* UITextField+textField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5904BB1E14F8CB001FAEE1 /* UITextField+textField.swift */; };
+		CD5904C41E1521FB001FAEE1 /* ic_history_white_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5904C31E1521FB001FAEE1 /* ic_history_white_24dp.png */; };
+		CD5904C61E152211001FAEE1 /* ic_textsms_white_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5904C51E152211001FAEE1 /* ic_textsms_white_24dp.png */; };
+		CD5904C81E152223001FAEE1 /* ic_contacts_white_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5904C71E152223001FAEE1 /* ic_contacts_white_24dp.png */; };
+		CD5904CA1E1525EB001FAEE1 /* ic_send_sms_back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD5904C91E1525EB001FAEE1 /* ic_send_sms_back.jpg */; };
+		CD5904CC1E152A50001FAEE1 /* sample_logo_transperant.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5904CB1E152A50001FAEE1 /* sample_logo_transperant.png */; };
+		CD5904CE1E1544E5001FAEE1 /* ic_paper_new_white_24.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5904CD1E1544E5001FAEE1 /* ic_paper_new_white_24.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +45,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CD4215091E13BE1B00658EA9 /* ic_person_grey_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_person_grey_24.png; sourceTree = "<group>"; };
-		CD42150B1E13C1F100658EA9 /* ic_lock_grey_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_lock_grey_24.png; sourceTree = "<group>"; };
 		CD42150D1E13C22400658EA9 /* ic_company_grey_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_company_grey_24.png; sourceTree = "<group>"; };
 		CD5259991E126A230042F7F1 /* BusinessReviewsHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessReviewsHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD52599C1E126A230042F7F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,12 @@
 		CD5259CD1E1279850042F7F1 /* splash_screen_logo_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_screen_logo_2.png; sourceTree = "<group>"; };
 		CD5259D11E128EC90042F7F1 /* loginImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginImage.png; sourceTree = "<group>"; };
 		CD5904BB1E14F8CB001FAEE1 /* UITextField+textField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+textField.swift"; sourceTree = "<group>"; };
+		CD5904C31E1521FB001FAEE1 /* ic_history_white_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_history_white_24dp.png; sourceTree = "<group>"; };
+		CD5904C51E152211001FAEE1 /* ic_textsms_white_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_textsms_white_24dp.png; sourceTree = "<group>"; };
+		CD5904C71E152223001FAEE1 /* ic_contacts_white_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_contacts_white_24dp.png; sourceTree = "<group>"; };
+		CD5904C91E1525EB001FAEE1 /* ic_send_sms_back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ic_send_sms_back.jpg; sourceTree = "<group>"; };
+		CD5904CB1E152A50001FAEE1 /* sample_logo_transperant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample_logo_transperant.png; sourceTree = "<group>"; };
+		CD5904CD1E1544E5001FAEE1 /* ic_paper_new_white_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_paper_new_white_24.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,10 +119,10 @@
 		CD52599B1E126A230042F7F1 /* BusinessReviewsHub */ = {
 			isa = PBXGroup;
 			children = (
-				CD5259CC1E1279340042F7F1 /* Resources */,
 				CD52599C1E126A230042F7F1 /* AppDelegate.swift */,
 				CD52599E1E126A230042F7F1 /* LoginViewController.swift */,
 				CD5904BB1E14F8CB001FAEE1 /* UITextField+textField.swift */,
+				CD5259CC1E1279340042F7F1 /* Resources */,
 				CD5259A01E126A230042F7F1 /* Main.storyboard */,
 				CD5259A31E126A230042F7F1 /* Assets.xcassets */,
 				CD5259A51E126A230042F7F1 /* LaunchScreen.storyboard */,
@@ -144,12 +152,16 @@
 		CD5259CC1E1279340042F7F1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CD4215091E13BE1B00658EA9 /* ic_person_grey_24.png */,
-				CD42150B1E13C1F100658EA9 /* ic_lock_grey_24.png */,
 				CD42150D1E13C22400658EA9 /* ic_company_grey_24.png */,
 				CD5259CA1E12739D0042F7F1 /* ic_new_logo_back.png */,
 				CD5259CD1E1279850042F7F1 /* splash_screen_logo_2.png */,
 				CD5259D11E128EC90042F7F1 /* loginImage.png */,
+				CD5904C31E1521FB001FAEE1 /* ic_history_white_24dp.png */,
+				CD5904C51E152211001FAEE1 /* ic_textsms_white_24dp.png */,
+				CD5904C71E152223001FAEE1 /* ic_contacts_white_24dp.png */,
+				CD5904C91E1525EB001FAEE1 /* ic_send_sms_back.jpg */,
+				CD5904CB1E152A50001FAEE1 /* sample_logo_transperant.png */,
+				CD5904CD1E1544E5001FAEE1 /* ic_paper_new_white_24.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -265,11 +277,15 @@
 				CD5259A71E126A230042F7F1 /* LaunchScreen.storyboard in Resources */,
 				CD5259A41E126A230042F7F1 /* Assets.xcassets in Resources */,
 				CD5259A21E126A230042F7F1 /* Main.storyboard in Resources */,
-				CD42150A1E13BE1B00658EA9 /* ic_person_grey_24.png in Resources */,
-				CD42150C1E13C1F100658EA9 /* ic_lock_grey_24.png in Resources */,
+				CD5904C41E1521FB001FAEE1 /* ic_history_white_24dp.png in Resources */,
+				CD5904CE1E1544E5001FAEE1 /* ic_paper_new_white_24.png in Resources */,
+				CD5904CA1E1525EB001FAEE1 /* ic_send_sms_back.jpg in Resources */,
 				CD5259CE1E1279850042F7F1 /* splash_screen_logo_2.png in Resources */,
+				CD5904C81E152223001FAEE1 /* ic_contacts_white_24dp.png in Resources */,
+				CD5904C61E152211001FAEE1 /* ic_textsms_white_24dp.png in Resources */,
 				CD42150E1E13C22400658EA9 /* ic_company_grey_24.png in Resources */,
 				CD5259D21E128EC90042F7F1 /* loginImage.png in Resources */,
+				CD5904CC1E152A50001FAEE1 /* sample_logo_transperant.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

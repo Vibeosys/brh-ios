@@ -70,6 +70,9 @@
                                 <state key="normal" title="SIGN IN ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="DDa-2t-kDe" kind="show" id="28G-BG-D7J"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="lw0-DX-N7M">
                                 <rect key="frame" x="34" y="244.5" width="252" height="129.5"/>
@@ -97,8 +100,8 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="LOGIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gat-Br-QTd">
-                                <rect key="frame" x="0.0" y="177" width="320" height="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gat-Br-QTd">
+                                <rect key="frame" x="0.0" y="179" width="320" height="23.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -149,7 +152,7 @@
             </objects>
             <point key="canvasLocation" x="31.875" y="36.971830985915496"/>
         </scene>
-        <!--Item 2-->
+        <!--History-->
         <scene sceneID="cb5-Iu-UZH">
             <objects>
                 <viewController id="1TQ-X3-OnS" sceneMemberID="viewController">
@@ -162,15 +165,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="oBk-Nl-xvb"/>
+                    <tabBarItem key="tabBarItem" title="History" image="ic_history_white_24dp.png" id="oBk-Nl-xvb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RbO-4w-VsR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1912" y="437"/>
+            <point key="canvasLocation" x="1911" y="324"/>
         </scene>
-        <!--Item 1-->
+        <!--Profile-->
+        <scene sceneID="Tdv-wI-Trn">
+            <objects>
+                <viewController id="8v9-5w-GPg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Eht-DL-6Pf"/>
+                        <viewControllerLayoutGuide type="bottom" id="NvE-NV-WP1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XPk-af-PNr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="ic_contacts_white_24dp.png" id="hIW-u9-LyD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aGt-ey-cfT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1911" y="1036"/>
+        </scene>
+        <!--New Message-->
         <scene sceneID="bJi-Iu-aLW">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yi3-dL-MFX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="xhM-y4-vlS" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="i6W-ja-htM"/>
@@ -179,13 +202,62 @@
                     <view key="view" contentMode="scaleToFill" id="Qk3-Ix-VQU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_send_sms_back.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ac5-5a-5DD">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="167"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANNA Company" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roM-Ld-72U">
+                                <rect key="frame" x="109" y="55" width="211" height="56"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.99991279840000002" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample_logo_transperant.png" translatesAutoresizingMaskIntoConstraints="NO" id="iyA-9j-99c">
+                                <rect key="frame" x="0.0" y="43" width="93" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="a76-c2-MBr"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LpY-qB-ALS">
+                                <rect key="frame" x="16" y="207" width="288" height="195"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NewMessage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8s-mC-ZyI">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.24705882352941178" green="0.31764705882352939" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_paper_new_white_24.png" translatesAutoresizingMaskIntoConstraints="NO" id="tiZ-F0-vZo">
+                                        <rect key="frame" x="36" y="4" width="24" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.24705882352941178" green="0.31764705882352939" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="roM-Ld-72U" firstAttribute="leading" secondItem="iyA-9j-99c" secondAttribute="trailing" constant="16" id="17h-BC-xwP"/>
+                            <constraint firstAttribute="trailing" secondItem="ac5-5a-5DD" secondAttribute="trailing" id="1dl-QG-HtK"/>
+                            <constraint firstItem="ac5-5a-5DD" firstAttribute="top" secondItem="Qk3-Ix-VQU" secondAttribute="top" id="3hA-zM-GwZ"/>
+                            <constraint firstItem="YSF-jh-FXv" firstAttribute="top" secondItem="ac5-5a-5DD" secondAttribute="bottom" constant="352" id="Fcg-bm-Opz"/>
+                            <constraint firstItem="ac5-5a-5DD" firstAttribute="leading" secondItem="iyA-9j-99c" secondAttribute="leading" id="K4M-YK-4lH"/>
+                            <constraint firstItem="ac5-5a-5DD" firstAttribute="leading" secondItem="Qk3-Ix-VQU" secondAttribute="leading" id="M69-fF-V73"/>
+                            <constraint firstItem="iyA-9j-99c" firstAttribute="top" secondItem="i6W-ja-htM" secondAttribute="bottom" constant="23" id="XNb-jt-ziv"/>
+                            <constraint firstItem="ac5-5a-5DD" firstAttribute="centerY" secondItem="roM-Ld-72U" secondAttribute="centerY" id="nHX-BP-uT6"/>
+                            <constraint firstItem="roM-Ld-72U" firstAttribute="top" secondItem="i6W-ja-htM" secondAttribute="bottom" constant="35" id="qUs-6w-PXd"/>
+                            <constraint firstItem="iyA-9j-99c" firstAttribute="centerY" secondItem="roM-Ld-72U" secondAttribute="centerY" id="tJY-u5-mOI"/>
+                            <constraint firstItem="ac5-5a-5DD" firstAttribute="trailing" secondItem="roM-Ld-72U" secondAttribute="trailing" id="x1U-cd-OrG"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="bo4-Ve-0c6"/>
+                    <tabBarItem key="tabBarItem" title="New Message" image="ic_textsms_white_24dp.png" id="bo4-Ve-0c6"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yi3-dL-MFX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1912" y="-361"/>
+            <point key="canvasLocation" x="1910.625" y="-361.26760563380282"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Rv9-en-Ehf">
@@ -194,11 +266,14 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="40L-sf-tWm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.24705882352941178" green="0.31764705882352939" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="xhM-y4-vlS" kind="relationship" relationship="viewControllers" id="7dx-nf-Zzy"/>
                         <segue destination="1TQ-X3-OnS" kind="relationship" relationship="viewControllers" id="Nbc-Ip-O55"/>
+                        <segue destination="8v9-5w-GPg" kind="relationship" relationship="viewControllers" id="06r-it-8bE"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ywl-Us-fzk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -207,7 +282,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ic_contacts_white_24dp.png" width="24" height="24"/>
+        <image name="ic_history_white_24dp.png" width="24" height="24"/>
         <image name="ic_new_logo_back.png" width="768" height="1280"/>
+        <image name="ic_paper_new_white_24.png" width="24" height="24"/>
+        <image name="ic_send_sms_back.jpg" width="626" height="412"/>
+        <image name="ic_textsms_white_24dp.png" width="24" height="24"/>
         <image name="loginImage.png" width="80" height="80"/>
+        <image name="sample_logo_transperant.png" width="670" height="300"/>
     </resources>
 </document>
