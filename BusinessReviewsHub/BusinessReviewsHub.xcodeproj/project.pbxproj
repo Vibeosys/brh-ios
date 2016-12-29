@@ -10,7 +10,6 @@
 		CD42150A1E13BE1B00658EA9 /* ic_person_grey_24.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4215091E13BE1B00658EA9 /* ic_person_grey_24.png */; };
 		CD42150C1E13C1F100658EA9 /* ic_lock_grey_24.png in Resources */ = {isa = PBXBuildFile; fileRef = CD42150B1E13C1F100658EA9 /* ic_lock_grey_24.png */; };
 		CD42150E1E13C22400658EA9 /* ic_company_grey_24.png in Resources */ = {isa = PBXBuildFile; fileRef = CD42150D1E13C22400658EA9 /* ic_company_grey_24.png */; };
-		CD4215101E13E8F000658EA9 /* BRHPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD42150F1E13E8F000658EA9 /* BRHPadding.swift */; };
 		CD52599D1E126A230042F7F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52599C1E126A230042F7F1 /* AppDelegate.swift */; };
 		CD52599F1E126A230042F7F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52599E1E126A230042F7F1 /* LoginViewController.swift */; };
 		CD5259A21E126A230042F7F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5259A01E126A230042F7F1 /* Main.storyboard */; };
@@ -21,6 +20,7 @@
 		CD5259CB1E12739D0042F7F1 /* ic_new_logo_back.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5259CA1E12739D0042F7F1 /* ic_new_logo_back.png */; };
 		CD5259CE1E1279850042F7F1 /* splash_screen_logo_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5259CD1E1279850042F7F1 /* splash_screen_logo_2.png */; };
 		CD5259D21E128EC90042F7F1 /* loginImage.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5259D11E128EC90042F7F1 /* loginImage.png */; };
+		CD5904BC1E14F8CB001FAEE1 /* UITextField+textField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5904BB1E14F8CB001FAEE1 /* UITextField+textField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,6 @@
 		CD4215091E13BE1B00658EA9 /* ic_person_grey_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_person_grey_24.png; sourceTree = "<group>"; };
 		CD42150B1E13C1F100658EA9 /* ic_lock_grey_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_lock_grey_24.png; sourceTree = "<group>"; };
 		CD42150D1E13C22400658EA9 /* ic_company_grey_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_company_grey_24.png; sourceTree = "<group>"; };
-		CD42150F1E13E8F000658EA9 /* BRHPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BRHPadding.swift; sourceTree = "<group>"; };
 		CD5259991E126A230042F7F1 /* BusinessReviewsHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessReviewsHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD52599C1E126A230042F7F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD52599E1E126A230042F7F1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +60,7 @@
 		CD5259CA1E12739D0042F7F1 /* ic_new_logo_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_new_logo_back.png; sourceTree = "<group>"; };
 		CD5259CD1E1279850042F7F1 /* splash_screen_logo_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_screen_logo_2.png; sourceTree = "<group>"; };
 		CD5259D11E128EC90042F7F1 /* loginImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginImage.png; sourceTree = "<group>"; };
+		CD5904BB1E14F8CB001FAEE1 /* UITextField+textField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+textField.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +114,7 @@
 				CD5259CC1E1279340042F7F1 /* Resources */,
 				CD52599C1E126A230042F7F1 /* AppDelegate.swift */,
 				CD52599E1E126A230042F7F1 /* LoginViewController.swift */,
-				CD42150F1E13E8F000658EA9 /* BRHPadding.swift */,
+				CD5904BB1E14F8CB001FAEE1 /* UITextField+textField.swift */,
 				CD5259A01E126A230042F7F1 /* Main.storyboard */,
 				CD5259A31E126A230042F7F1 /* Assets.xcassets */,
 				CD5259A51E126A230042F7F1 /* LaunchScreen.storyboard */,
@@ -295,7 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD52599F1E126A230042F7F1 /* LoginViewController.swift in Sources */,
-				CD4215101E13E8F000658EA9 /* BRHPadding.swift in Sources */,
+				CD5904BC1E14F8CB001FAEE1 /* UITextField+textField.swift in Sources */,
 				CD52599D1E126A230042F7F1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

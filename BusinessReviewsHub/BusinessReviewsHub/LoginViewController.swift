@@ -36,38 +36,59 @@ class LoginViewController: UIViewController {
 //        var paddingRight: CGFloat = 5
         
         
-        userTextField.leftViewMode = UITextFieldViewMode.always
+        
+//        userTextField.leftViewMode = UITextFieldViewMode.always
+//
+//        let personimageView = UIImageView(frame: CGRect.init(x:0, y: 0, width: 20, height: 20))
+//
+//        let personimage = UIImage(named: "ic_person_grey_24.png")
+//        personimageView.image = personimage
+//        userTextField.leftView = personimageView
+//        let userborder = CALayer()
+//        let  userwidth = CGFloat(1.0)
+//        userborder.borderColor = UIColor.darkGray.cgColor
+//        userborder.frame = CGRect(x: 0, y: userTextField.frame.size.height - userwidth, width:  userTextField.frame.size.width, height: userTextField.frame.size.height)
+//        
+//        userborder.borderWidth = userwidth
+//        userTextField.layer.addSublayer(userborder)
+//        userTextField.layer.masksToBounds = true
+//        
+//        
+//
+        
+        
+        loginImage.layer.borderWidth = 2
+        loginImage.layer.masksToBounds = false
+        loginImage.layer.borderColor = UIColor.white.cgColor
+        loginImage.layer.cornerRadius = loginImage.frame.height/2
+        loginImage.clipsToBounds = true
+        
+        
+        
 
-        let personimageView = UIImageView(frame: CGRect.init(x:0, y: 0, width: 20, height: 20))
-
+      var frame = CGRect.init(x: 0, y: 0, width: 30, height: 30)
+      var imageSize = CGSize.init(width: 20, height: 20)
+       
         let personimage = UIImage(named: "ic_person_grey_24.png")
-        personimageView.image = personimage
-        userTextField.leftView = personimageView
-    
+        userTextField.addLeftIcon(personimage, frame:frame, imageSize:imageSize)
+         userTextField.underlined()
         
         
+        let passwordimage = UIImage(named: "ic_lock_grey_24.png")
+        passwordTextField.addLeftIcon(passwordimage, frame: frame, imageSize: imageSize)
+        passwordTextField.underlined()
+
         
         
-                
-        
-        
-        companytextField.leftViewMode = UITextFieldViewMode.always
-        let companyimageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
         
         let companyimage = UIImage(named: "ic_company_grey_24.png")
-        companyimageView.image = companyimage
-        companytextField.leftView = companyimageView
-        
-      //  companytextField.leftView = UIView(frame:CGRect(0,0,30,30))
-        
-        
-        passwordTextField.leftViewMode = UITextFieldViewMode.always
-        let passwordimageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
-        let passwordimage = UIImage(named: "ic_lock_grey_24.png")
-        passwordimageView.image = passwordimage
-        passwordTextField.leftView = passwordimageView
-        
+        companytextField.addLeftIcon(companyimage, frame: frame, imageSize: imageSize)
+        companytextField.underlined()
 
+       
+        
+        
+       
 
 
         
@@ -97,6 +118,9 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+   
 
 
 }
