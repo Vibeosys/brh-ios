@@ -344,6 +344,7 @@
                         <outlet property="companyName" destination="roM-Ld-72U" id="41M-9C-8Ef"/>
                         <outlet property="custNameTxtFIeld" destination="o5W-3q-vAu" id="GJn-gs-e5z"/>
                         <outlet property="phoneTxtField" destination="gab-hy-Uy5" id="JhP-dU-B5t"/>
+                        <outlet property="submessageView" destination="LpY-qB-ALS" id="qCn-gO-gOG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yi3-dL-MFX" userLabel="First Responder" sceneMemberID="firstResponder"/>

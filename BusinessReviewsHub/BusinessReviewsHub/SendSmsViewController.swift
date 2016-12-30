@@ -29,10 +29,18 @@ class SendSmsViewController: UIViewController {
     @IBAction func clearButton(_ sender: UIButton) {
     }
     
+    
+    @IBOutlet weak var submessageView: UIView!
+    
+    
     override func viewDidLoad()
     
     {
         super.viewDidLoad()
+        
+        submessageView.layer.borderColor = UIColor.lightGray.cgColor
+        submessageView.layer.borderWidth = 0.5
+        
         
         var frame = CGRect.init(x: 0, y: 0, width: 30, height: 30)
         var imageSize = CGSize.init(width: 20, height: 20)
