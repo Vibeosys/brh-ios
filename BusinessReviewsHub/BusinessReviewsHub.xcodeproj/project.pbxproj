@@ -26,7 +26,6 @@
 		CDDFDE211E16781B0063C4F3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDFDE201E16781B0063C4F3 /* ProfileViewController.swift */; };
 		CDDFDE231E1678D60063C4F3 /* ic_demo_profile_bck.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDDFDE221E1678D60063C4F3 /* ic_demo_profile_bck.jpg */; };
 		CDDFDE251E167A6D0063C4F3 /* test_profile_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDDFDE241E167A6D0063C4F3 /* test_profile_image.jpg */; };
-		CDDFDE271E16893A0063C4F3 /* ic_power_settings_new_white_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDFDE261E16893A0063C4F3 /* ic_power_settings_new_white_24dp.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +71,6 @@
 		CDDFDE201E16781B0063C4F3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CDDFDE221E1678D60063C4F3 /* ic_demo_profile_bck.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ic_demo_profile_bck.jpg; sourceTree = "<group>"; };
 		CDDFDE241E167A6D0063C4F3 /* test_profile_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test_profile_image.jpg; sourceTree = "<group>"; };
-		CDDFDE261E16893A0063C4F3 /* ic_power_settings_new_white_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_power_settings_new_white_24dp.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,7 +165,6 @@
 				CDDFDE121E1640280063C4F3 /* ic_history_image.jpg */,
 				CDDFDE221E1678D60063C4F3 /* ic_demo_profile_bck.jpg */,
 				CDDFDE241E167A6D0063C4F3 /* test_profile_image.jpg */,
-				CDDFDE261E16893A0063C4F3 /* ic_power_settings_new_white_24dp.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -288,7 +285,6 @@
 				CD5259A21E126A230042F7F1 /* Main.storyboard in Resources */,
 				CD5904CA1E1525EB001FAEE1 /* ic_send_sms_back.jpg in Resources */,
 				CD5259CE1E1279850042F7F1 /* splash_screen_logo_2.png in Resources */,
-				CDDFDE271E16893A0063C4F3 /* ic_power_settings_new_white_24dp.png in Resources */,
 				CD5259D21E128EC90042F7F1 /* loginImage.png in Resources */,
 				CD5904CC1E152A50001FAEE1 /* sample_logo_transperant.png in Resources */,
 			);
