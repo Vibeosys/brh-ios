@@ -165,13 +165,67 @@
                     <view key="view" contentMode="scaleToFill" id="Yem-AK-eHi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_history_image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="eyc-Kb-7RM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="165"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMS History" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4u-zK-CmM">
+                                <rect key="frame" x="0.0" y="120" width="212" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="9kY-oI-st0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    Customer SMS History" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvz-ew-ER4">
+                                <rect key="frame" x="0.0" y="165" width="320" height="35"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="z5d-ci-y97"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="40" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qFs-2g-gJD">
+                                <rect key="frame" x="0.0" y="200" width="320" height="319"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="40" id="0Nj-eE-Hrg">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="40"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Nj-eE-Hrg" id="CcI-z7-pwr">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mvz-ew-ER4" firstAttribute="top" secondItem="x4u-zK-CmM" secondAttribute="bottom" id="5hd-Qq-Eow"/>
+                            <constraint firstItem="mvz-ew-ER4" firstAttribute="leading" secondItem="Yem-AK-eHi" secondAttribute="leading" id="AxI-JN-DFm"/>
+                            <constraint firstItem="x4u-zK-CmM" firstAttribute="leading" secondItem="mvz-ew-ER4" secondAttribute="leading" id="K88-hC-dL5"/>
+                            <constraint firstItem="qFs-2g-gJD" firstAttribute="top" secondItem="mvz-ew-ER4" secondAttribute="bottom" id="Os4-tY-Tl8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="x4u-zK-CmM" secondAttribute="trailing" constant="92" id="SUw-xp-AVd"/>
+                            <constraint firstItem="x4u-zK-CmM" firstAttribute="bottom" secondItem="eyc-Kb-7RM" secondAttribute="bottom" id="cZm-OM-hRx"/>
+                            <constraint firstItem="qFs-2g-gJD" firstAttribute="leading" secondItem="Yem-AK-eHi" secondAttribute="leading" id="eeJ-6g-erH"/>
+                            <constraint firstItem="x4u-zK-CmM" firstAttribute="top" secondItem="5jt-fX-ENc" secondAttribute="bottom" constant="100" id="evh-vf-Atb"/>
+                            <constraint firstItem="3kO-sb-DqH" firstAttribute="top" secondItem="qFs-2g-gJD" secondAttribute="bottom" id="fw5-Of-6n9"/>
+                            <constraint firstItem="eyc-Kb-7RM" firstAttribute="top" secondItem="Yem-AK-eHi" secondAttribute="top" id="g8b-0p-xoV"/>
+                            <constraint firstAttribute="trailing" secondItem="qFs-2g-gJD" secondAttribute="trailing" id="jgb-ic-JZV"/>
+                            <constraint firstItem="eyc-Kb-7RM" firstAttribute="trailing" secondItem="mvz-ew-ER4" secondAttribute="trailing" id="kXP-ON-LJE"/>
+                            <constraint firstItem="eyc-Kb-7RM" firstAttribute="leading" secondItem="x4u-zK-CmM" secondAttribute="leading" id="uNT-0V-i61"/>
+                            <constraint firstAttribute="trailing" secondItem="mvz-ew-ER4" secondAttribute="trailing" id="xKm-6t-dgb"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="History" image="history" id="oBk-Nl-xvb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RbO-4w-VsR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1911" y="324"/>
+            <point key="canvasLocation" x="1910.625" y="323.23943661971833"/>
         </scene>
         <!--Profile-->
         <scene sceneID="Tdv-wI-Trn">
@@ -375,6 +429,7 @@
     </scenes>
     <resources>
         <image name="history" width="24" height="24"/>
+        <image name="ic_history_image.jpg" width="800" height="450"/>
         <image name="ic_new_logo_back.png" width="768" height="1280"/>
         <image name="ic_send_sms_back.jpg" width="626" height="412"/>
         <image name="loginImage.png" width="80" height="80"/>

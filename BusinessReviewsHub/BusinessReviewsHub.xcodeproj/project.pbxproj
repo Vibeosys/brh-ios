@@ -21,6 +21,7 @@
 		CD5904CA1E1525EB001FAEE1 /* ic_send_sms_back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD5904C91E1525EB001FAEE1 /* ic_send_sms_back.jpg */; };
 		CD5904CC1E152A50001FAEE1 /* sample_logo_transperant.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5904CB1E152A50001FAEE1 /* sample_logo_transperant.png */; };
 		CDDFDE111E16366F0063C4F3 /* SendSmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDFDE101E16366F0063C4F3 /* SendSmsViewController.swift */; };
+		CDDFDE131E1640280063C4F3 /* ic_history_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDDFDE121E1640280063C4F3 /* ic_history_image.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		CD5904C91E1525EB001FAEE1 /* ic_send_sms_back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ic_send_sms_back.jpg; sourceTree = "<group>"; };
 		CD5904CB1E152A50001FAEE1 /* sample_logo_transperant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample_logo_transperant.png; sourceTree = "<group>"; };
 		CDDFDE101E16366F0063C4F3 /* SendSmsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendSmsViewController.swift; sourceTree = "<group>"; };
+		CDDFDE121E1640280063C4F3 /* ic_history_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ic_history_image.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				CD5259D11E128EC90042F7F1 /* loginImage.png */,
 				CD5904C91E1525EB001FAEE1 /* ic_send_sms_back.jpg */,
 				CD5904CB1E152A50001FAEE1 /* sample_logo_transperant.png */,
+				CDDFDE121E1640280063C4F3 /* ic_history_image.jpg */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDDFDE131E1640280063C4F3 /* ic_history_image.jpg in Resources */,
 				CD5259CB1E12739D0042F7F1 /* ic_new_logo_back.png in Resources */,
 				CD5259A71E126A230042F7F1 /* LaunchScreen.storyboard in Resources */,
 				CD5259A41E126A230042F7F1 /* Assets.xcassets in Resources */,
