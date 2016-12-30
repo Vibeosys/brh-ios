@@ -40,6 +40,21 @@ extension UITextField
 
 
 
+    ///  Add a image icon on the Right side of the textfield
+    public func addRightIcon(_ image: UIImage?, frame: CGRect, imageSize: CGSize) {
+        let rightView = UIView()
+        rightView.frame = frame
+        let imgView = UIImageView()
+        
+        
+        imgView.frame = CGRect(x: frame.width - 8 - imageSize.width, y: (frame.height - imageSize.height) / 2 , width: imageSize.width, height: imageSize.height)
+        imgView.image = image
+        rightView.addSubview(imgView)
+        self.rightView = rightView
+        self.rightViewMode = UITextFieldViewMode.always
+    }
+    
+
 
 
 

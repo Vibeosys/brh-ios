@@ -22,6 +22,11 @@
 		CD5904CC1E152A50001FAEE1 /* sample_logo_transperant.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5904CB1E152A50001FAEE1 /* sample_logo_transperant.png */; };
 		CDDFDE111E16366F0063C4F3 /* SendSmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDFDE101E16366F0063C4F3 /* SendSmsViewController.swift */; };
 		CDDFDE131E1640280063C4F3 /* ic_history_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDDFDE121E1640280063C4F3 /* ic_history_image.jpg */; };
+		CDDFDE1F1E1677F90063C4F3 /* SmsHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDFDE1E1E1677F80063C4F3 /* SmsHistoryViewController.swift */; };
+		CDDFDE211E16781B0063C4F3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDFDE201E16781B0063C4F3 /* ProfileViewController.swift */; };
+		CDDFDE231E1678D60063C4F3 /* ic_demo_profile_bck.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDDFDE221E1678D60063C4F3 /* ic_demo_profile_bck.jpg */; };
+		CDDFDE251E167A6D0063C4F3 /* test_profile_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDDFDE241E167A6D0063C4F3 /* test_profile_image.jpg */; };
+		CDDFDE271E16893A0063C4F3 /* ic_power_settings_new_white_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDFDE261E16893A0063C4F3 /* ic_power_settings_new_white_24dp.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +68,11 @@
 		CD5904CB1E152A50001FAEE1 /* sample_logo_transperant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample_logo_transperant.png; sourceTree = "<group>"; };
 		CDDFDE101E16366F0063C4F3 /* SendSmsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendSmsViewController.swift; sourceTree = "<group>"; };
 		CDDFDE121E1640280063C4F3 /* ic_history_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ic_history_image.jpg; sourceTree = "<group>"; };
+		CDDFDE1E1E1677F80063C4F3 /* SmsHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmsHistoryViewController.swift; sourceTree = "<group>"; };
+		CDDFDE201E16781B0063C4F3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CDDFDE221E1678D60063C4F3 /* ic_demo_profile_bck.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ic_demo_profile_bck.jpg; sourceTree = "<group>"; };
+		CDDFDE241E167A6D0063C4F3 /* test_profile_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test_profile_image.jpg; sourceTree = "<group>"; };
+		CDDFDE261E16893A0063C4F3 /* ic_power_settings_new_white_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_power_settings_new_white_24dp.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +126,8 @@
 				CD52599C1E126A230042F7F1 /* AppDelegate.swift */,
 				CD52599E1E126A230042F7F1 /* LoginViewController.swift */,
 				CDDFDE101E16366F0063C4F3 /* SendSmsViewController.swift */,
+				CDDFDE1E1E1677F80063C4F3 /* SmsHistoryViewController.swift */,
+				CDDFDE201E16781B0063C4F3 /* ProfileViewController.swift */,
 				CD5904BB1E14F8CB001FAEE1 /* UITextField+textField.swift */,
 				CD5259CC1E1279340042F7F1 /* Resources */,
 				CD5259A01E126A230042F7F1 /* Main.storyboard */,
@@ -153,6 +165,9 @@
 				CD5904C91E1525EB001FAEE1 /* ic_send_sms_back.jpg */,
 				CD5904CB1E152A50001FAEE1 /* sample_logo_transperant.png */,
 				CDDFDE121E1640280063C4F3 /* ic_history_image.jpg */,
+				CDDFDE221E1678D60063C4F3 /* ic_demo_profile_bck.jpg */,
+				CDDFDE241E167A6D0063C4F3 /* test_profile_image.jpg */,
+				CDDFDE261E16893A0063C4F3 /* ic_power_settings_new_white_24dp.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -264,13 +279,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDDFDE251E167A6D0063C4F3 /* test_profile_image.jpg in Resources */,
 				CDDFDE131E1640280063C4F3 /* ic_history_image.jpg in Resources */,
 				CD5259CB1E12739D0042F7F1 /* ic_new_logo_back.png in Resources */,
 				CD5259A71E126A230042F7F1 /* LaunchScreen.storyboard in Resources */,
+				CDDFDE231E1678D60063C4F3 /* ic_demo_profile_bck.jpg in Resources */,
 				CD5259A41E126A230042F7F1 /* Assets.xcassets in Resources */,
 				CD5259A21E126A230042F7F1 /* Main.storyboard in Resources */,
 				CD5904CA1E1525EB001FAEE1 /* ic_send_sms_back.jpg in Resources */,
 				CD5259CE1E1279850042F7F1 /* splash_screen_logo_2.png in Resources */,
+				CDDFDE271E16893A0063C4F3 /* ic_power_settings_new_white_24dp.png in Resources */,
 				CD5259D21E128EC90042F7F1 /* loginImage.png in Resources */,
 				CD5904CC1E152A50001FAEE1 /* sample_logo_transperant.png in Resources */,
 			);
@@ -297,9 +315,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDDFDE211E16781B0063C4F3 /* ProfileViewController.swift in Sources */,
 				CD52599F1E126A230042F7F1 /* LoginViewController.swift in Sources */,
 				CD5904BC1E14F8CB001FAEE1 /* UITextField+textField.swift in Sources */,
 				CDDFDE111E16366F0063C4F3 /* SendSmsViewController.swift in Sources */,
+				CDDFDE1F1E1677F90063C4F3 /* SmsHistoryViewController.swift in Sources */,
 				CD52599D1E126A230042F7F1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
