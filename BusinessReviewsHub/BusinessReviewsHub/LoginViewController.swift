@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Alamofire
+import EVReflection
+
 
 class LoginViewController: UIViewController {
     
@@ -23,6 +26,41 @@ class LoginViewController: UIViewController {
     
     
     @IBOutlet weak var companytextField: UITextField!
+    
+    
+    @IBAction func signInButtonTapped(_ sender: UIButton)
+    {
+        var userRegistration : UserRegistrationModel = UserRegistrationModel()
+        var userInfo :UserInfoModel = UserInfoModel()
+        
+        
+        userRegistration.email = userTextField.text!
+        userRegistration.password = passwordTextField.text!
+        userRegistration.companyCode = companytextField.text!
+        
+        var serviceFacade = ServiceFacade(configUrl:"http://192.168.1.6:8084")
+        
+        var responseRegistration = serviceFacade.Signup(userRegistration: userRegistration, userInfo: userInfo, completionHandler: {
+            responseRegistration in
+            var errorCode = responseRegistration.errorCode
+            var errormessage = responseRegistration.message
+            var data = responseRegistration.data
+            
+            return nil
+            
+            
+        
+        })
+        
+        
+        
+        
+    }
+    
+    
+    
+    
+    
     
     override func viewDidLoad()
     {
@@ -90,31 +128,8 @@ class LoginViewController: UIViewController {
        
         
         
-       
-
-
-        
-        
-        
-        
-        
+}
     
-        
-        
-        
-    }
-    
-//    func setRounded() {
-//        let radius = self.frame.width / 2
-//        self.layer.cornerRadius = radius
-//        self.layer.masksToBounds = true
-//        self.clipsToBounds = true;
-//        self.layer.borderWidth = 0.0;
-//        self.layer.borderColor = UIColor.white.cgColor
-//        
-//        
-//    }
-//
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

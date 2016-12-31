@@ -1,0 +1,15 @@
+PODS:
+  - Alamofire (4.2.0)
+  - EVReflection (3.5.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - EVReflection
+
+SPEC CHECKSUMS:
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  EVReflection: 3a9e1e41661ad7f0f86a4f5e5a6a7ef999c63819
+
+PODFILE CHECKSUM: b7fae4e8891cd0c315a123813904890650b2eb66
+
+COCOAPODS: 1.1.1

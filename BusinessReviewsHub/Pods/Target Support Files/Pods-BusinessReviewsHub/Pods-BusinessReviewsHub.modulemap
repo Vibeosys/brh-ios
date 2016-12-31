@@ -1,0 +1,6 @@
+framework module Pods_BusinessReviewsHub {
+  umbrella header "Pods-BusinessReviewsHub-umbrella.h"
+
+  export *
+  module * { export * }
+}
