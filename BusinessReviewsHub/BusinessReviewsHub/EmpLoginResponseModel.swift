@@ -9,11 +9,16 @@
 import Foundation
 import EVReflection
 
-public class EmpLoginResponseModel : EVObject
+public class EmpLoginResponseModel:BaseResponseModel
 {
-    var EmpCode : String = ""
-    var EmpName : String = ""
-    var PhoneNo : String = ""
+    var empCode : String? = ""
+    var empName : String? = ""
+    var phoneNo : String? = ""
+    var companyName : String? = ""
+    var companyLogo : String? = ""
+    var profileImage : String? = ""
+    var email : String? = ""
+    var password : String? = ""
+    var companyCode : String? = ""
     
-
 }

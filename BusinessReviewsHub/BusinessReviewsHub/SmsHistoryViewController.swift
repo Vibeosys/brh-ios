@@ -8,12 +8,35 @@
 
 import UIKit
 
-class SmsHistoryViewController: UIViewController {
+class SmsHistoryViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
+{
+    
+    @IBOutlet weak var tableView: UITableView!
+    var userDefaultManager : UserdefaultManager = UserdefaultManager()
+    var smsHistory : [SmsHistoryResponseModel] = []
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
+        let smsHistoryUserRequest : UserRequestModel? = self.userDefaultManager.getuserDetail()
+        let smsHistoryDataRequest : SmsHistoryDataRequestModel = SmsHistoryDataRequestModel()
+        
+        
+        let serviceFacade = ServiceFacade(configUrl: PropertyFileReader.getBaseUrl())
+        serviceFacade.SmsHistory(smsHistoryDataRequest: smsHistoryDataRequest,
+                                 smsHistoryUserRequest: smsHistoryUserRequest,
+                                 completionHandler: {
+                                    response in
+                                    self.smsHistory = response as! [SmsHistoryResponseModel]
+                                    self.tableView.reloadData()
+                                    
+        })
+        
+        
+        
+        
 
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +44,43 @@ class SmsHistoryViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    { return smsHistory.count
     }
-    */
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
+        
+        
+        let serverdateFormatter = DateFormatter()
+        serverdateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        let strDate:String = self.smsHistory[indexPath.row].smsDate
+        let date = serverdateFormatter.date(from: strDate)
+        
+        let displayDateFormatter = DateFormatter()
+        displayDateFormatter.dateFormat = "MMM d"
+        
+        let displayTimeFormatter = DateFormatter()
+        displayTimeFormatter.dateFormat = "hh:mm a"
 
+        
+        let displayDate = displayDateFormatter.string(from: date!)
+        let displayTime = displayTimeFormatter.string(from: date!)
+        
+        
+        cell.custnameLabel.text? = self.smsHistory[indexPath.row].customerName
+        cell.phoneNoLabel.text? = self.smsHistory[indexPath.row].phoneNo
+        cell.dateDaylabel.text? = displayDate
+        cell.timelabel.text? = displayTime
+        
+        return (cell)
+        
+    }
+    
+
+
+    
+
+    
 }

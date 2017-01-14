@@ -15,6 +15,6 @@ public class BaseResponseModel : EVObject
     var errorCode : Int32 = 0
     var message : String = ""
     var data : String = ""
-
+    
 
 }

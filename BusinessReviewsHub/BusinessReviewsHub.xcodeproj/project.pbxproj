@@ -19,6 +19,7 @@
 		CD5259CB1E12739D0042F7F1 /* ic_new_logo_back.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5259CA1E12739D0042F7F1 /* ic_new_logo_back.png */; };
 		CD5259CE1E1279850042F7F1 /* splash_screen_logo_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5259CD1E1279850042F7F1 /* splash_screen_logo_2.png */; };
 		CD5259D21E128EC90042F7F1 /* loginImage.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5259D11E128EC90042F7F1 /* loginImage.png */; };
+		CD55B3A11E1BE05300F0BA7D /* PropertyFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD55B3A01E1BE05200F0BA7D /* PropertyFileReader.swift */; };
 		CD5904BC1E14F8CB001FAEE1 /* UITextField+textField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5904BB1E14F8CB001FAEE1 /* UITextField+textField.swift */; };
 		CD5904CA1E1525EB001FAEE1 /* ic_send_sms_back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD5904C91E1525EB001FAEE1 /* ic_send_sms_back.jpg */; };
 		CD5904CC1E152A50001FAEE1 /* sample_logo_transperant.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5904CB1E152A50001FAEE1 /* sample_logo_transperant.png */; };
@@ -27,12 +28,25 @@
 		CD7C246F1E1796300051B327 /* ServiceFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C246E1E1796300051B327 /* ServiceFacade.swift */; };
 		CD7C24711E179A0F0051B327 /* EmpLoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C24701E179A0F0051B327 /* EmpLoginResponseModel.swift */; };
 		CD7C24731E179E160051B327 /* BaseResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C24721E179E160051B327 /* BaseResponseModel.swift */; };
+		CD8677511E1A79C4006B4AB4 /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8677501E1A79C4006B4AB4 /* UserDefaultManager.swift */; };
+		CD8677531E1A897B006B4AB4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8677521E1A897B006B4AB4 /* BaseViewController.swift */; };
+		CD9D3D3A1E1E508400B71ED1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9D3D391E1E508400B71ED1 /* TableViewCell.swift */; };
+		CD9D3D3C1E1E546100B71ED1 /* SmsHistoryResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9D3D3B1E1E546100B71ED1 /* SmsHistoryResponseModel.swift */; };
+		CD9D3D3E1E1E690200B71ED1 /* SmsHistoryDataRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9D3D3D1E1E690200B71ED1 /* SmsHistoryDataRequestModel.swift */; };
+		CDB299491E1F77020012AFF5 /* ProfileDataRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB299481E1F77020012AFF5 /* ProfileDataRequestModel.swift */; };
+		CDB2994B1E1F79300012AFF5 /* ProfileUpdateResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB2994A1E1F79300012AFF5 /* ProfileUpdateResponseModel.swift */; };
 		CDDFDE111E16366F0063C4F3 /* SendSmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDFDE101E16366F0063C4F3 /* SendSmsViewController.swift */; };
 		CDDFDE131E1640280063C4F3 /* ic_history_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDDFDE121E1640280063C4F3 /* ic_history_image.jpg */; };
 		CDDFDE1F1E1677F90063C4F3 /* SmsHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDFDE1E1E1677F80063C4F3 /* SmsHistoryViewController.swift */; };
 		CDDFDE211E16781B0063C4F3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDFDE201E16781B0063C4F3 /* ProfileViewController.swift */; };
 		CDDFDE231E1678D60063C4F3 /* ic_demo_profile_bck.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDDFDE221E1678D60063C4F3 /* ic_demo_profile_bck.jpg */; };
 		CDDFDE251E167A6D0063C4F3 /* test_profile_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDDFDE241E167A6D0063C4F3 /* test_profile_image.jpg */; };
+		CDE6711C1E23B484004A3F46 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE6711B1E23B484004A3F46 /* Alamofire.framework */; };
+		CDE6711E1E23B489004A3F46 /* EVReflection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE6711D1E23B489004A3F46 /* EVReflection.framework */; };
+		CDE671201E23B498004A3F46 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE6711F1E23B498004A3F46 /* AlamofireImage.framework */; };
+		CDE671221E23B4A2004A3F46 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE671211E23B4A2004A3F46 /* MBProgressHUD.framework */; };
+		CDFDF0B61E1D1ACC00B15796 /* SendSmsDataRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFDF0B51E1D1ACC00B15796 /* SendSmsDataRequestModel.swift */; };
+		CDFDF0B81E1D1CFB00B15796 /* UserRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFDF0B71E1D1CFB00B15796 /* UserRequestModel.swift */; };
 		E102CAF88C85A47FC12B3EAD /* Pods_BusinessReviewsHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8ECFD3330B7BB4C2034BC8 /* Pods_BusinessReviewsHub.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +92,7 @@
 		CD5259CA1E12739D0042F7F1 /* ic_new_logo_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_new_logo_back.png; sourceTree = "<group>"; };
 		CD5259CD1E1279850042F7F1 /* splash_screen_logo_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_screen_logo_2.png; sourceTree = "<group>"; };
 		CD5259D11E128EC90042F7F1 /* loginImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginImage.png; sourceTree = "<group>"; };
+		CD55B3A01E1BE05200F0BA7D /* PropertyFileReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyFileReader.swift; sourceTree = "<group>"; };
 		CD5904BB1E14F8CB001FAEE1 /* UITextField+textField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+textField.swift"; sourceTree = "<group>"; };
 		CD5904C91E1525EB001FAEE1 /* ic_send_sms_back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ic_send_sms_back.jpg; sourceTree = "<group>"; };
 		CD5904CB1E152A50001FAEE1 /* sample_logo_transperant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample_logo_transperant.png; sourceTree = "<group>"; };
@@ -86,12 +101,25 @@
 		CD7C246E1E1796300051B327 /* ServiceFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceFacade.swift; sourceTree = "<group>"; };
 		CD7C24701E179A0F0051B327 /* EmpLoginResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmpLoginResponseModel.swift; sourceTree = "<group>"; };
 		CD7C24721E179E160051B327 /* BaseResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponseModel.swift; sourceTree = "<group>"; };
+		CD8677501E1A79C4006B4AB4 /* UserDefaultManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
+		CD8677521E1A897B006B4AB4 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CD9D3D391E1E508400B71ED1 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		CD9D3D3B1E1E546100B71ED1 /* SmsHistoryResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmsHistoryResponseModel.swift; sourceTree = "<group>"; };
+		CD9D3D3D1E1E690200B71ED1 /* SmsHistoryDataRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmsHistoryDataRequestModel.swift; sourceTree = "<group>"; };
+		CDB299481E1F77020012AFF5 /* ProfileDataRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDataRequestModel.swift; sourceTree = "<group>"; };
+		CDB2994A1E1F79300012AFF5 /* ProfileUpdateResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileUpdateResponseModel.swift; sourceTree = "<group>"; };
 		CDDFDE101E16366F0063C4F3 /* SendSmsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendSmsViewController.swift; sourceTree = "<group>"; };
 		CDDFDE121E1640280063C4F3 /* ic_history_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ic_history_image.jpg; sourceTree = "<group>"; };
 		CDDFDE1E1E1677F80063C4F3 /* SmsHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmsHistoryViewController.swift; sourceTree = "<group>"; };
 		CDDFDE201E16781B0063C4F3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CDDFDE221E1678D60063C4F3 /* ic_demo_profile_bck.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ic_demo_profile_bck.jpg; sourceTree = "<group>"; };
 		CDDFDE241E167A6D0063C4F3 /* test_profile_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test_profile_image.jpg; sourceTree = "<group>"; };
+		CDE6711B1E23B484004A3F46 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/BusinessReviewsHub-gyhzxefstpaxxteuzogspirzzdox/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		CDE6711D1E23B489004A3F46 /* EVReflection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EVReflection.framework; path = "../../../../Library/Developer/Xcode/DerivedData/BusinessReviewsHub-gyhzxefstpaxxteuzogspirzzdox/Build/Products/Debug-iphonesimulator/EVReflection/EVReflection.framework"; sourceTree = "<group>"; };
+		CDE6711F1E23B498004A3F46 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = "../../../../Library/Developer/Xcode/DerivedData/BusinessReviewsHub-gyhzxefstpaxxteuzogspirzzdox/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework"; sourceTree = "<group>"; };
+		CDE671211E23B4A2004A3F46 /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBProgressHUD.framework; path = "../../../../Library/Developer/Xcode/DerivedData/BusinessReviewsHub-gyhzxefstpaxxteuzogspirzzdox/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework"; sourceTree = "<group>"; };
+		CDFDF0B51E1D1ACC00B15796 /* SendSmsDataRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendSmsDataRequestModel.swift; sourceTree = "<group>"; };
+		CDFDF0B71E1D1CFB00B15796 /* UserRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequestModel.swift; sourceTree = "<group>"; };
 		E790415A60D371E18EDF601F /* Pods-BusinessReviewsHubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusinessReviewsHubTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BusinessReviewsHubTests/Pods-BusinessReviewsHubTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +128,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE671221E23B4A2004A3F46 /* MBProgressHUD.framework in Frameworks */,
+				CDE671201E23B498004A3F46 /* AlamofireImage.framework in Frameworks */,
+				CDE6711E1E23B489004A3F46 /* EVReflection.framework in Frameworks */,
+				CDE6711C1E23B484004A3F46 /* Alamofire.framework in Frameworks */,
 				E102CAF88C85A47FC12B3EAD /* Pods_BusinessReviewsHub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,6 +199,10 @@
 				CDDFDE1E1E1677F80063C4F3 /* SmsHistoryViewController.swift */,
 				CDDFDE201E16781B0063C4F3 /* ProfileViewController.swift */,
 				CD5904BB1E14F8CB001FAEE1 /* UITextField+textField.swift */,
+				CD8677521E1A897B006B4AB4 /* BaseViewController.swift */,
+				CD9D3D381E1E503A00B71ED1 /* TableViewCell */,
+				CD55B39F1E1BDFD200F0BA7D /* Utils */,
+				CD86774F1E1A79A3006B4AB4 /* Database */,
 				CD7C24671E178EC80051B327 /* Response Model */,
 				CD7C24661E178E8D0051B327 /* Service Facade */,
 				CD7C24651E178E710051B327 /* RequestModel */,
@@ -212,11 +248,23 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		CD55B39F1E1BDFD200F0BA7D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CD55B3A01E1BE05200F0BA7D /* PropertyFileReader.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		CD7C24651E178E710051B327 /* RequestModel */ = {
 			isa = PBXGroup;
 			children = (
 				CD7C24681E1793D00051B327 /* UserRegistrationModel.swift */,
 				CD7C246A1E1793F80051B327 /* UserInfoModel.swift */,
+				CDFDF0B51E1D1ACC00B15796 /* SendSmsDataRequestModel.swift */,
+				CDFDF0B71E1D1CFB00B15796 /* UserRequestModel.swift */,
+				CD9D3D3D1E1E690200B71ED1 /* SmsHistoryDataRequestModel.swift */,
+				CDB299481E1F77020012AFF5 /* ProfileDataRequestModel.swift */,
 			);
 			name = RequestModel;
 			sourceTree = "<group>";
@@ -234,13 +282,35 @@
 			children = (
 				CD7C24721E179E160051B327 /* BaseResponseModel.swift */,
 				CD7C24701E179A0F0051B327 /* EmpLoginResponseModel.swift */,
+				CD9D3D3B1E1E546100B71ED1 /* SmsHistoryResponseModel.swift */,
+				CDB2994A1E1F79300012AFF5 /* ProfileUpdateResponseModel.swift */,
 			);
 			name = "Response Model";
+			sourceTree = "<group>";
+		};
+		CD86774F1E1A79A3006B4AB4 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				CD8677501E1A79C4006B4AB4 /* UserDefaultManager.swift */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		CD9D3D381E1E503A00B71ED1 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CD9D3D391E1E508400B71ED1 /* TableViewCell.swift */,
+			);
+			name = TableViewCell;
 			sourceTree = "<group>";
 		};
 		FE6094CC9532136088FEB597 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CDE671211E23B4A2004A3F46 /* MBProgressHUD.framework */,
+				CDE6711F1E23B498004A3F46 /* AlamofireImage.framework */,
+				CDE6711D1E23B489004A3F46 /* EVReflection.framework */,
+				CDE6711B1E23B484004A3F46 /* Alamofire.framework */,
 				4A8ECFD3330B7BB4C2034BC8 /* Pods_BusinessReviewsHub.framework */,
 				B90D1338FCA967B4879170F4 /* Pods_BusinessReviewsHubTests.framework */,
 				194A7E17BDE9812A706E8905 /* Pods_BusinessReviewsHubUITests.framework */,
@@ -325,15 +395,18 @@
 				TargetAttributes = {
 					CD5259981E126A220042F7F1 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = VE62E7U747;
 						ProvisioningStyle = Automatic;
 					};
 					CD5259AC1E126A230042F7F1 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = VE62E7U747;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CD5259981E126A220042F7F1;
 					};
 					CD5259B71E126A230042F7F1 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = VE62E7U747;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CD5259981E126A220042F7F1;
 					};
@@ -537,17 +610,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDFDF0B61E1D1ACC00B15796 /* SendSmsDataRequestModel.swift in Sources */,
+				CDB299491E1F77020012AFF5 /* ProfileDataRequestModel.swift in Sources */,
+				CD8677531E1A897B006B4AB4 /* BaseViewController.swift in Sources */,
 				CDDFDE211E16781B0063C4F3 /* ProfileViewController.swift in Sources */,
 				CD52599F1E126A230042F7F1 /* LoginViewController.swift in Sources */,
 				CD7C246B1E1793F80051B327 /* UserInfoModel.swift in Sources */,
 				CD5904BC1E14F8CB001FAEE1 /* UITextField+textField.swift in Sources */,
 				CD7C246F1E1796300051B327 /* ServiceFacade.swift in Sources */,
 				CDDFDE111E16366F0063C4F3 /* SendSmsViewController.swift in Sources */,
+				CD9D3D3E1E1E690200B71ED1 /* SmsHistoryDataRequestModel.swift in Sources */,
+				CD8677511E1A79C4006B4AB4 /* UserDefaultManager.swift in Sources */,
+				CDB2994B1E1F79300012AFF5 /* ProfileUpdateResponseModel.swift in Sources */,
 				CDDFDE1F1E1677F90063C4F3 /* SmsHistoryViewController.swift in Sources */,
 				CD7C24691E1793D00051B327 /* UserRegistrationModel.swift in Sources */,
+				CD9D3D3C1E1E546100B71ED1 /* SmsHistoryResponseModel.swift in Sources */,
 				CD52599D1E126A230042F7F1 /* AppDelegate.swift in Sources */,
 				CD7C24711E179A0F0051B327 /* EmpLoginResponseModel.swift in Sources */,
 				CD7C24731E179E160051B327 /* BaseResponseModel.swift in Sources */,
+				CD9D3D3A1E1E508400B71ED1 /* TableViewCell.swift in Sources */,
+				CDFDF0B81E1D1CFB00B15796 /* UserRequestModel.swift in Sources */,
+				CD55B3A11E1BE05300F0BA7D /* PropertyFileReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,12 +725,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -672,6 +756,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -685,10 +770,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -697,11 +783,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8FF7063F11864B42C2461F92 /* Pods-BusinessReviewsHub.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VE62E7U747;
 				INFOPLIST_FILE = BusinessReviewsHub/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.businessreviewhub.BusinessReviewsHub;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dustinlampert.businessreviewshub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -711,11 +799,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C41F1E5F80DBD5CFFE678346 /* Pods-BusinessReviewsHub.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = VE62E7U747;
 				INFOPLIST_FILE = BusinessReviewsHub/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.businessreviewhub.BusinessReviewsHub;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dustinlampert.businessreviewshub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -727,6 +818,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VE62E7U747;
 				INFOPLIST_FILE = BusinessReviewsHubTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.businessreviewhub.BusinessReviewsHubTests;
@@ -742,6 +834,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VE62E7U747;
 				INFOPLIST_FILE = BusinessReviewsHubTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.businessreviewhub.BusinessReviewsHubTests;
@@ -756,6 +849,7 @@
 			baseConfigurationReference = 26CA8BF85E308231C733BD62 /* Pods-BusinessReviewsHubUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = VE62E7U747;
 				INFOPLIST_FILE = BusinessReviewsHubUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.businessreviewhub.BusinessReviewsHubUITests;
@@ -770,6 +864,7 @@
 			baseConfigurationReference = 15D343179C8721EE68179A22 /* Pods-BusinessReviewsHubUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = VE62E7U747;
 				INFOPLIST_FILE = BusinessReviewsHubUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.businessreviewhub.BusinessReviewsHubUITests;

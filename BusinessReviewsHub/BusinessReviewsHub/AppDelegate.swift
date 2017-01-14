@@ -12,10 +12,17 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+     var userDefaultManager : UserdefaultManager = UserdefaultManager()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        if(self.userDefaultManager.GetLoginValidate() == true )
+        {
+            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc: UIViewController = storyboard.instantiateViewController(withIdentifier: "TabBarController") as UIViewController
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            appDelegate.window?.rootViewController = vc
+            }
+
         return true
     }
 

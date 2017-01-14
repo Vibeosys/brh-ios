@@ -9,6 +9,8 @@
 [![Documentation](https://img.shields.io/badge/documented-97%-green.svg?style=flat)](http://cocoadocs.org/docsets/EVReflection)
 [![Stars](https://img.shields.io/github/stars/evermeer/EVReflection.svg?style=flat)](https://github.com/evermeer/EVReflection/stargazers)
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/matteocrippa/awesome-swift#json)
+[![Downloads](https://img.shields.io/cocoapods/dt/EVReflection.svg?style=flat)](https://cocoapods.org/pods/EVReflection)
+
 
 [![Version](https://img.shields.io/cocoapods/v/EVReflection.svg?style=flat)](http://cocoadocs.org/docsets/EVReflection)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
@@ -46,7 +48,7 @@ In most cases EVReflection is very easy to use. Just take a look at the [YouTube
 - [Skip the serialization or deserialization of specific values](https://github.com/evermeer/EVReflection#skip-the-serialization-or-deserialization-of-specific-values)
 - [Property validators](https://github.com/evermeer/EVReflection#property-validators)
 - [Deserialization class level validations](https://github.com/evermeer/EVReflection#deserialization-class-level-validations)
-- [What to do when you use object enheritance](https://github.com/evermeer/EVReflection#what-to-do-when-you-use-object-enheritance)
+- [What to do when you use object inheritance](https://github.com/evermeer/EVReflection#what-to-do-when-you-use-object-inheritance)
 - [Known issues](https://github.com/evermeer/EVReflection#known-issues)
 - [License](https://github.com/evermeer/EVReflection#license)
 - [My other libraries](https://github.com/evermeer/EVReflection#my-other-libraries)
@@ -375,8 +377,8 @@ func testValidation() {
 }
 ```
 
-### What to do when you use object enheritance
-You can deserialize json to an object that uses enheritance. When the properties are specified as the base class, then the correct specific object type will be returned by the function `getSpecificType`. See the sample code below or the unit test in EVReflectionEnheritanceTests.swift
+### What to do when you use object inheritance
+You can deserialize json to an object that uses inheritance. When the properties are specified as the base class, then the correct specific object type will be returned by the function `getSpecificType`. See the sample code below or the unit test in EVReflectionInheritanceTests.swift
 
 ```
 class Quz: EVObject {
@@ -388,7 +390,7 @@ class Quz: EVObject {
 class Foo: EVObject {
     var allFoo: String = "all Foo"
 
-    // What you need to do to get the correct type for when you deserialize enherited classes
+    // What you need to do to get the correct type for when you deserialize inherited classes
     override func getSpecificType(dict: NSDictionary) -> EVObject {
         if dict["justBar"] != nil {
             return Bar()

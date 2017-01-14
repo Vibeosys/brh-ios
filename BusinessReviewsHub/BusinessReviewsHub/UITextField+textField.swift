@@ -47,32 +47,13 @@ extension UITextField
         let imgView = UIImageView()
         
         
-        imgView.frame = CGRect(x: frame.width - 8 - imageSize.width, y: (frame.height - imageSize.height) / 2 , width: imageSize.width, height: imageSize.height)
+        imgView.frame = CGRect(x: frame.width - 15 - imageSize.width, y: (frame.height - imageSize.height) / 2 , width: imageSize.width, height: imageSize.height)
         imgView.image = image
         rightView.addSubview(imgView)
         self.rightView = rightView
         self.rightViewMode = UITextFieldViewMode.always
     }
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
+
